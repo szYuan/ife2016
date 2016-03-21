@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Absolute 2</title>
+	<style>
+		#box{
+			width: 400px;
+			height: 200px;
+			background: #ccc;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin:auto;
+		}
+		#box>div{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background: orange;
+			border-radius: 50px;
+		}
+		#round1{
+			left:-25px;
+			top:-25px;
+		}
+		#round2{
+			left:100%;
+			top: 100%;
+			margin-left:-25px;
+			margin-top:-25px;	
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="round1"></div>
+		<div id="round2"></div>
+	</div>
+</body>
+</html>

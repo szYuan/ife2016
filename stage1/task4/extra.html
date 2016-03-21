@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Extra div</title>
+	<style>
+		html{
+			height:100%;	
+		}
+		body{
+			height:100%;	
+			margin: 0;
+		}
+		#box{
+			width: 400px;
+			height: 200px;
+			background: #ccc;
+			overflow: hidden;
+			position: relative;
+			margin:0 auto;
+		}
+		#extra{
+			height: 50%;
+			margin-bottom: -100px;
+		}
+		#box>div{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background: orange;
+			border-radius: 50px;
+		}
+		#round1{
+			left:-25px;
+			top:-25px;
+		}
+		#round2{
+			left:100%;
+			top: 100%;
+			margin-left:-25px;
+			margin-top:-25px;	
+		}
+	</style>
+</head>
+<body>
+	<div id="extra"></div>
+	<div id="box">
+		<div id="round1"></div>
+		<div id="round2"></div>
+	</div>
+</body>
+</html>
