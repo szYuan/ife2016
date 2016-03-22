@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float</title>
+	<style>
+		html{
+			height:100%;
+		}
+		body{
+			height:100%;
+			width: 100%;
+			margin: 0;
+			display: table;
+		}
+		#container{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		#box{
+			width: 400px;
+			height: 200px;
+			background: #ccc;
+			overflow:hidden;
+			margin:0 auto;
+			position: relative;
+		}
+		#box>div{
+			width: 50px;
+			height: 50px;
+			background: orange;
+			border-radius: 50px;
+			position: absolute;
+		}
+		#round1{
+			margin-left:-25px;
+			margin-top:-25px;
+		}
+		#round2{
+			bottom: 0;
+			right: 0;
+			margin-right:-25px;
+			margin-bottom:-25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box">
+			<div id="round1"></div>
+			<div id="round2"></div>
+		</div>
+	</div>	
+</body>
+</html>

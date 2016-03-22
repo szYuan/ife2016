@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex</title>
+	<style>
+		html{
+			height:100%;
+		}
+		body{
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			height:100%;
+			margin: 0;
+		}
+		#box{
+			width: 400px;
+			height: 200px;
+			background: #ccc;
+			display: flex;
+			justify-content: space-between;
+			overflow:hidden;
+		}
+		#box>div{
+			width: 50px;
+			height: 50px;
+			background: orange;
+			border-radius: 50px;
+		}
+		#round1{
+			margin-left:-25px;
+			margin-top:-25px;
+		}
+		#round2{
+			align-self:flex-end;
+			margin-right:-25px;
+			margin-bottom:-25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="round1"></div>
+		<div id="round2"></div>
+	</div>
+</body>
+</html>
