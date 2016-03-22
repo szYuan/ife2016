@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Position</title>
+	<style>
+	body{
+		background: #acdbfd;
+	}
+		#box{
+			width: 400px;
+			height: 200px;
+			background: #ccc;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			margin-left:-200px;
+			margin-top:-100px;
+			overflow: hidden;
+		}
+		#box>div{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background: orange;
+			border-radius: 50px;
+		}
+		#round1{
+			left:-50px;
+			top:-50px;
+		}
+		#round2{
+			left:100%;
+			top: 100%;
+			margin-left:-50px;
+			margin-top:-50px;	
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="round1"></div>
+		<div id="round2"></div>
+	</div>
+</body>
+</html>
