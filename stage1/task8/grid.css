@@ -3,15 +3,12 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.container-split{
-	display:block;
-	margin:0 20px;
-}
 /************grid**********/
 .row{
 	display: block;
 	position:relative;
 	box-sizing: border-box;
+	margin:10px;
 }
 .row:after{
 	content:'';
@@ -28,7 +25,9 @@ body{
 	padding:10px;
 }
 .col .col-item{
-	min-width:10px;
+	height:50px;
+	border: 1px solid #999;
+	background: #eee;
 }
 .col-1{width:8.333333%;}
 .col-2{width:16.666666%;}
